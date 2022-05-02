@@ -24,7 +24,7 @@ def chat():
     model.load_state_dict(model_state)
     model.eval()
 
-    bot_name = "Sam"
+    bot_name = "Fido"
     print("Let's chat! (type 'quit' to exit)")
     #sentence = input("You: ")
     sentence=takeCommand()
@@ -68,7 +68,7 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Sam"
+bot_name = "Fido"
 
 def get_response(msg):
     sentence = tokenize(msg)
