@@ -18,6 +18,187 @@
         ]
       },
       {
+        "tag": "morning",
+        "patterns": [
+          "Morning",
+          "Good Morning",
+          "What a beautiful morning!"
+        ],
+        "responses": [
+          "Good Morning!",
+          "Wish you a very good morning!",
+          "Have a good morning!"
+        ]
+      },
+      {
+        "tag": "afternoon",
+        "patterns": [
+          "Afternoon",
+          "Good Afternoon",
+          "What a beautiful afternoon!",
+          "Good noon"
+        ],
+        "responses": [
+          "Good Afternoon!",
+          "Very good afternoon!",
+          "Have a good afternoon!"
+        ]
+      },
+      {
+        "tag": "evening",
+        "patterns": [
+          "Evening",
+          "Good Evening",
+          "What a beautiful evening!",
+          "Eve",
+          "What a pleasant eve"
+        ],
+        "responses": [
+          "Good Afternoon!",
+          "Very good afternoon!",
+          "Have a good afternoon!"
+        ]
+      },
+      {
+        "tag": "emi",
+        "patterns": [
+          "Is emi options available?",
+          "What are the Emi options?",
+          "Tell me about the Emi options!"
+        ],
+        "responses": [
+          "We have no cost EMI options and bank EMI options too.",
+          "We provide bank EMI options and no cost EMI options too.",
+          "You will get no cost EMI options and bank EMI options."
+        ]
+      },
+      {
+        "tag": "cod",
+        "patterns": [
+          "Is COD options available?",
+          "Do you provide cod?",
+          "Can I order products on Cod?",
+          "Can I pay using cash on delivery?"
+        ],
+        "responses": [
+          "We have COD service.",
+          "We provide COD on orders.",
+          "Yes! You can opt for COD.",
+          "Yes! Certainly!"
+        ]
+      },
+      {
+        "tag": "refund",
+        "patterns": [
+          "My return was picked up but I haven't received my refund yet!",
+          "When can I expect my refund?",
+          "I haven't received my refund yet!",
+          "My refund is delaying!",
+          "When I will get my refund?",
+          "When can I expect my money back?",
+          "When I will get my money back?",
+          "Please generate my refund!"
+        ],
+        "responses": [
+          "Refund will be initiated after we receive the item and it passes the quality check.",
+          "Refund time depends on the mode of refund.",
+          "It may take up to 7 to 10 business days.",
+          "Once we receive the product and it passes the quality check we will generate the refund.",
+          "Sometimes it takes longer than usual thanks for the cooperation.",
+          "Sometimes takes longer than usual. Sorry for the inconvenience caused.",
+          "We are trying to initiate the refund ASAP. Sorry for the inconvenience caused."
+        ]
+      },
+      {
+        "tag": "multipay",
+        "patterns": [
+          "My payment has been debited multiple times.",
+          "I am charged multiple times.",
+          "My account has been deleted multiple times.",
+          "Multiple payment has been done for the same product.",
+          "My order didn't get placed, but payment got debited."
+        ],
+        "responses": [
+          "We're sorry for the inconvenience. The extra amount debited will be refunded to your bank account automatically.",
+          "You will get your refund in 7 to 10 business days.",
+          "Sorry for the inconvenience caused. We will refund the extra amount."
+        ]
+      },
+      {
+        "tag": "gift",
+        "patterns": [
+          "I am unable to use the gift card.",
+          "I am unable to use the coupon code.",
+          "Getting error while applying the coupon code.",
+          "Facing issue regarding the gift card."
+        ],
+        "responses": [
+          "We are extremely sorry for the inconvenience caused. Please use the contractors option for further support.",
+          "Thanks for informing will try to solve the issue soon.",
+          "Sorry for the inconvenience caused. We will look into this matter. Thanks for the cooperation.",
+          "Please check the terms and conditions and eligibility criteria."
+        ]
+      },
+      {
+        "tag": "delivery",
+        "patterns": [
+          "Where is my order?",
+          "What is my order location?",
+          "Track my order.",
+          "By when I can expect my order's delivery?",
+          "When my order will be delivered?"
+        ],
+        "responses": [
+          "It is on the way. As soon as its reaches the nearest hub you will get it.",
+          "Due to huge order load it may take longer than the usual.",
+          "Sometimes it takes longer than usual. Sorry for the inconvenience caused!",
+          "The product has been shipped. You will receive it soon. Thanks for shopping!",
+          "Use the tracking ID to track your order."
+        ]
+      },
+      {
+        "tag": "cancel",
+        "patterns": [
+          "I want to cancel my order.",
+          "How to cancel the order?",
+          "How can I cancel my order?"
+        ],
+        "responses": [
+          "If you are sure you don't want this item please click on the cancel order button.",
+          "Please use the cancel order option.",
+          "If you don't want this product just use the cancel order button."
+        ]
+      },
+      {
+        "tag": "fast",
+        "patterns": [
+          "Can I get a faster delivery?",
+          "Please deliver my order fast.",
+          "I need a faster delivery.",
+          "I want a fast delivery.",
+          "Can I get my order faster?"
+        ],
+        "responses": [
+          "Sorry user, we are unable to honour the request for expedite delivery however rest assured that we will deliver by the expected delivery date.",
+          "Sorry we can't process this request. It completely depends on the Courier service.",
+          "Due to festive season it may take longer than usual.",
+          "The product will be delivered by the expected delivery date.",
+          "Due to heavy order pressure it may takes longer than usual. Thanks for the cooperation."
+        ]
+      },
+      {
+        "tag": "changeAddress",
+        "patterns": [
+          "I want to change the delivery address.",
+          "Can I change my delivery address?",
+          "Please change my delivery address."
+        ],
+        "responses": [
+          "The delivery address can't be changed if the item has been shipped.",
+          "Sorry user, we cannot change the delivery address if the item has been shipped."
+        ]
+      },
+      {
         "tag": "goodbye",
         "patterns": ["Bye", "See you later", "Goodbye"],
         "responses": [
@@ -29,7 +210,7 @@
       {
         "tag": "thanks",
         "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        "responses": ["Happy to help!", "Any time!", "My pleasure", "You are welcome!","Welcome!"]
       },
       {
         "tag": "items",
@@ -49,11 +230,13 @@
           "Do you take credit cards?",
           "Do you accept Mastercard?",
           "Can I pay with Paypal?",
-          "Are you cash only?"
+          "Are you cash only?",
+          "What are the payment methods available?",
+          "Tell me about the payment options!"
         ],
         "responses": [
-          "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal"
+          "We accept cash, VISA, Mastercard, all UPI's and Paypal. There are EMI options also.",
+          "We accept cash and most major credit cards, UPI's and Paypal. There are EMI options also."
         ]
       },
       {

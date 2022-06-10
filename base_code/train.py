@@ -73,23 +73,28 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
+correct=0
+total=0
+
 for epoch in range(num_epochs):
     for (words, labels) in train_loader:
         words = words.to(device)
         labels = labels.to(dtype=torch.long).to(device)
-        
+        total += labels.shape[0]
         outputs = model(words)
         loss = criterion(outputs, labels)
         
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
+        correct += torch.sum(labels == outputs.argmax(dim=-1))
         
     if (epoch+1) % 100 == 0:
         print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
 
 
-print(f'final loss: {loss.item():.4f}')
+print(f'final loss: {loss.item():.8f}')
+print("Accuracy :",float((correct / total)*100),'%')
 
 data = {
 "model_state": model.state_dict(),

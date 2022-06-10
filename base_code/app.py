@@ -24,7 +24,7 @@ class ChatApplication:
         
         # head label
         head_label = Label(self.window, bg=BG_GRAY, fg=TEXT_COLOR,
-                           text="ChatMate Chatbot", font=FONT_BOLD, pady=10)
+                           text="ChatMate", font=FONT_BOLD, pady=10)
         head_label.place(relwidth=1)
         
         # tiny divider
@@ -38,9 +38,9 @@ class ChatApplication:
         self.text_widget.configure(cursor="arrow", state=DISABLED)
         
         # scroll bar
-        scrollbar = Scrollbar(self.text_widget,bg='#1a2738')
-        scrollbar.place(relheight=1, relx=0.974)
-        scrollbar.configure(command=self.text_widget.yview)
+        # scrollbar = Scrollbar(self.text_widget,bg='#1a2738')
+        # scrollbar.place(relheight=1, relx=0.974)
+        # scrollbar.configure(command=self.text_widget.yview)
         
         # bottom label
         bottom_label = Label(self.window, bg=BG_GRAY, height=80)
